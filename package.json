@@ -1,0 +1,41 @@
+{
+  "name": "sigh-browser-sync",
+  "version": "0.0.1",
+  "description": "sigh plugin for browser-sync.",
+  "scripts": {
+    "test": "sigh"
+  },
+  "main": "lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ohjames/sigh-browser-sync.git"
+  },
+  "keywords": [
+    "build",
+    "assets",
+    "pipeline",
+    "sigh-plugin"
+  ],
+  "author": "github@chilon.net",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohjames/sigh-browser-sync/issues"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "lodash": "^3.10.0",
+    "sigh-core": "^0.11.7"
+  },
+  "devDependencies": {
+    "babel": "^5.8.5",
+    "browser-sync": "^2.8.0",
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "process-pool": "^0.3.2",
+    "sigh": "^0.12.12",
+    "sigh-babel": "^0.11.5",
+    "sigh-cli": "^0.2.8",
+    "sigh-mocha": "^0.1.2",
+    "source-map-support": "^0.3.2"
+  }
+}
