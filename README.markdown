@@ -33,7 +33,7 @@ The client javascript will require code like this to connect to the `live-reload
 
 ```javascript
 var js = document.createElement('script')
-js.src = '//' + (location.host || 'localhost').split(':')[0] + ':3000/browser-sync/browser-sync-client.2.8.0.js'
+js.src = '//' + (location.host || 'localhost').split(':')[0] + ':3000/browser-sync/browser-sync-client.js'
 document.body.appendChild(js)
 ```
 
