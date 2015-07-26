@@ -6,7 +6,7 @@ Sigh plugin for [browser-sync](http://www.browsersync.io/).
 
 ## Example
 
-`npm install --save-dev sigh-browser-sync` then add something like this to your `sigh.js`:
+`npm install --save-dev sigh-browser-sync browser-sync` then add something like this to your `sigh.js`:
 
 ```javascript
 var browserSync, glob, write, sass
