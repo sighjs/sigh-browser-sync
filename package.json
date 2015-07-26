@@ -8,7 +8,7 @@
   "main": "lib/index",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ohjames/sigh-browser-sync.git"
+    "url": "git://github.com/sighjs/sigh-browser-sync.git"
   },
   "keywords": [
     "build",
@@ -19,7 +19,7 @@
   "author": "github@chilon.net",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ohjames/sigh-browser-sync/issues"
+    "url": "https://github.com/sighjs/sigh-browser-sync/issues"
   },
   "dependencies": {
     "bluebird": "^2.9.34",

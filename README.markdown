@@ -1,6 +1,6 @@
 # sigh-browser-sync
 
-[![build status](https://circleci.com/gh/ohjames/sigh-browser-sync.png)](https://circleci.com/gh/ohjames/sigh-browser-sync)
+[![build status](https://circleci.com/gh/sighjs/sigh-browser-sync.png)](https://circleci.com/gh/sighjs/sigh-browser-sync)
 
 Sigh plugin for...
 
