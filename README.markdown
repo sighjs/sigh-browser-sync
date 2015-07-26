@@ -2,7 +2,7 @@
 
 [![build status](https://circleci.com/gh/sighjs/sigh-browser-sync.png)](https://circleci.com/gh/sighjs/sigh-browser-sync)
 
-Sigh plugin for...
+Sigh plugin for [browser-sync](http://www.browsersync.io/).
 
 ## Example
 
