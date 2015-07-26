@@ -9,25 +9,25 @@ Sigh plugin for...
 `npm install --save-dev sigh-browser-sync` then add something like this to your `sigh.js`:
 
 ```javascript
-var liveReload, glob, write, sass
+var browserSync, glob, write, sass
 
 module.exports = function(pipelines) {
-  pipelines['build:source'] = [
-    var globOpts = { basePath: 'src' }
+  var globOpts = { basePath: 'src' }
 
+  pipelines['build:source'] = [
     merge(
-      [ glob(globOpts, '**/*.js'), babel() ]
+      [ glob(globOpts, '**/*.js'), babel() ],
       [ glob(globOpts, '**/*.scss') sass() ]
-    )
+    ),
     write('build/assets'),
-    liveReload(),
+    browserSync(),
   ]
 }
 ```
 
 Now whenever the `write` operation passes on written files, if they are `css` files the `browser-sync` server will update your page, if they are `.js` files the page will reload.
 
-An optional object can be passed as the first argument to `liveReload` and will be passed on to the live-reload server's `init` call, a list of supported arguments can be [found here](http://www.browsersync.io/docs/options/).
+An optional object can be passed as the first argument to `browserSync` and will be passed on to the live-reload server's `init` call, a list of supported arguments can be [found here](http://www.browsersync.io/docs/options/).
 
 The client javascript will require code like this to connect to the `live-reload` server (replacing 3000 with whichever port is being used):
 
