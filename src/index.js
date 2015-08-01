@@ -14,6 +14,9 @@ function browserSyncTask(opts) {
 }
 
 export default function(op, opts = {}) {
+  if (! op.watch)
+    return op.stream
+
   var pooledProc = op.procPool.prepare(browserSyncTask, opts, { module, processLimit: 1 })
 
   return op.stream.flatMapLatest(events => {
